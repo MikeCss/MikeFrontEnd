@@ -12,6 +12,7 @@
  *  jquery.ui.core.js
  *  jquery.ui.widget.js
  *  jquery.ui.button.js
+ * edited by @ mike_freelance of mikefrontend.com 
  */
 (function( $ ) {
 
