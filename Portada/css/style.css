@@ -1,0 +1,172 @@
+body {background:url(../images/bg.jpg);font-family: Century Gothic;font-size:12px;color:#444;}
+
+@font-face { font-family:    Century Gothic;}
+@font-face { font-family:  Century Gothic;}
+
+a img {border:none;}
+
+#wrapper {width:900px;margin:0px auto;padding:0 0 0 0;}
+
+h3 {color:#396A88;font-size:1.6em;}
+h6 {color:#888;font-size:1.2em;padding:0;margin:0;font-family:georgia, Times New Roman, Times, Serif;font-style:italic;}
+
+#container {
+	position:relative;
+	margin-top: -50px;
+	width:899px;
+	height:358px;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#tab {
+	width: 110px;
+	height: 250px;
+	position: fixed;
+	left: 0px;
+	top: 100px;
+	background:   #fff url(../images/html5.png) no-repeat 5px 10px;
+	display: block;
+	border: 2px solid #f38d45;
+	border-left: 0;
+	opacity: 0.9;
+	-moz-border-radius-topright: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+}
+
+
+#overlay {
+	position:absolute;
+	top:134px;
+    left;0;
+	width:899px;
+	height:358px;
+	left: 10px;
+	font-family: "Thin Lines and Curves";
+	font-size: 36px;
+	font-weight: normal;
+}
+#container2 {
+  position:relative;
+  width:640px;
+  height:100px;
+}
+div#title {text-align:right;font-size:140px;font-weight:bold;font-family:Arial, Helvetica, Verdana, sans-serif;letter-spacing:-10px;color:#fff;line-height:105px;padding:110px 10px 0 0;}
+
+#overlay2 {
+  position:absolute;
+  top:0;
+  left;0;
+  width:640px;
+  height:100px;
+}
+#download {
+  position:absolute;
+  top:0;
+  left;0;
+  width:640px;
+  height:100px;
+}
+
+pre {padding:20px;background:#f2f2f2;font-weight:bold;width:600px;}
+div.note {padding:10px 20px 10px 20px;background:#f2f2f2;font-weight:normal;width:600px;}
+div.note h3 {padding:0;margin:0;color:#e00000;}
+span.red {color:#e00000;}
+span.grey {
+	font-size: 120px;
+	text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
+	font-family: GeosansLight;
+	font-weight: bold;
+}
+
+
+#stickey_footer { /* This will make your footer stay where it is */
+	background: none repeat scroll 0 0 #1D1D1D;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	bottom: 0;
+	font-family:  "Thin Lines and Curves";
+	height: 40px;
+	left: 50%;
+	margin: 0 auto 0 -490px;
+	padding: 0 10px;
+	position: fixed;
+	text-shadow: 1px 1px 1px #000000;
+	width: 960px;
+}
+/* border curves */
+#stickey_footer {
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px;
+}
+/* hover effect */
+#stickey_footer:hover {
+	background: none repeat scroll 0 0 #2b2a2a;
+}
+/* shadow for the footer*/
+#stickey_footer {
+	-moz-box-shadow:0px 0px 11px #191919;
+	-webkit-box-shadow:0px 0px 11px #191919;
+	box-shadow:0px 0px 11px #191919;
+}
+#footer_menu {
+	margin: 0;
+	padding: 0;
+	width:auto;
+}
+#footer_menu li {
+	list-style: none;
+	float: left;
+	font-size:12px;
+	padding: 12px 14px 14px 14px;
+	border-right:1px solid rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.1);
+}
+#footer_menu .imgmenu {
+	padding:5px 8px 3px 14px;
+	float:left;
+	background:url("../images/home.png") 13px 5px no-repeat;
+	width:36px;
+	height:30px;
+	border:none;
+	border-right:1px solid rgba(0, 0, 0, 0.4);
+	cursor:pointer;
+}
+#footer_menu li:hover {
+	background:#202020; /* Fallback color for old browsers */
+	background: rgba(0, 0, 0, 0.3);
+}
+#footer_menu .imgmenu:hover {
+	background:url("../images/home.png") 13px 5px no-repeat;
+}
+#footer_menu li a {
+	display: block;
+	color: #cccccc;
+	text-decoration: none;
+}
+#footer_menu li a:hover {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+}
+#footer_menu li span {
+	display:none;
+}
+#stickey_footer #social_icons {
+	float:right; /* social icons positions */
+	width:auto;
+	margin:5px 15px 0px;
+	padding:0px;
+	overflow:hidden;
+}
+#stickey_footer #social_icons li {
+	margin-right:12px; /* 12px is the space between each one of them */
+	float:left;
+	width:24px;
+	padding:0px;
+	height:32px;
+	list-style:none;
+	_margin-right:0px; /* this is for IE6 only */
+}
