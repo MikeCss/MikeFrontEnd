@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.5.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+<!-- Esta referencia a phonegap.js permitirá disponer de sugerencias para el código, siempre y cuando el sitio actual se haya configurado como aplicación móvil. 
+	 Para configurar el sitio como aplicación móvil, vaya a Sitio -> Aplicaciones móviles -> Configurar framework de aplicación... -->
+<script src="/phonegap.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page" data-theme="d">
+	<div data-role="header">
+		<h1><img src="images/android.png" width="300" height="160"></h1>
+		<p>&nbsp;</p>
+	</div>
+	<div data-role="content">
+	  <ul type="square" data-role="listview">
+		  <li><a href="#page2"><img src="images/Droid.png" width="48" height="48" align="middle">¿Qué es Android?</a></li>
+          <li><a href="#page3"><img src="images/Bardcode Scanner.png" width="48" height="48">Desarrollo</a></li>
+		  <li><a href="#page4"><img src="images/Market.png" width="48" height="48">Android Market </a></li>
+          <li><a href="#page5"><img src="images/People.png" width="48" height="48">Créditos </a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4><img src="images/bymike.png" width="150" height="50"></h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2" data-theme="d">
+	<div data-role="header">
+		<h1><img src="images/Droid.png" width="48" height="48"></h1>
+		<h1>Android</h1>
+	</div>
+	<div data-role="content">
+	  <ol data-role="listview" data-inset="true">
+        <li><a href="#page6">Descripción</a></li>
+        <li><a href="#page7">Arquitectura</a></li>
+        <li><a href="#page8">Dispositivos</a></li>
+      </ol>
+	</div>
+	<div data-role="footer">
+		<h4><img src="images/bymike.png" width="150" height="50"></h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3"  data-theme="d">
+	<div data-role="header">
+		<h1><img src="images/Bardcode Scanner.png" width="48" height="48"></h1>
+		<h1>Desarrollo</h1>
+	</div>
+	<div data-role="content">
+	  <p>Android, al contrario que otros sistemas operativos para dispositivos móviles como iOS o Windows Phone, se desarrolla de forma abierta y se puede acceder tanto al código fuente como al listado de incidencias  donde se pueden ver problemas aún no resueltos y reportar problemas nuevos.</p>
+	  <p>El que se tenga acceso al código fuente no significa que se pueda tener siempre la última versión de Android en un determinado móvil, ya que el código para soportar el hardware (controladores) de cada fabricante normalmente no es público, así que faltaría un <em>trozo</em> básico del firmware para poder hacerlo funcionar en dicho terminal, y porque las nuevas versiones de Android suelen requerir más recursos, por lo que los modelos más antiguos quedan descartados por razones de memoria (RAM), velocidad de procesador, etc.</p>
+	</div>
+	<div data-role="footer">
+		<h4><img src="images/bymike.png" width="150" height="50"></h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4"  data-theme="d">
+	<div data-role="header">
+		<h1><img src="images/Market.png" width="48" height="48"></h1>
+		<h1>Android Market</h1>
+	</div>
+	<div data-role="content"> 
+	  <p>Android Market es una tienda de software en línea desarrollada por Google para los dispositivos Android. Es una aplicación ("app") llamado "mercado" está preinstalado en la mayoría de los dispositivos Android y permite a los usuarios buscar y descargar aplicaciones publicadas por los desarrolladores de terceros, alojado en Android Market. Los usuarios también pueden buscar y obtener información sobre aplicaciones de la página web de este. </p>
+	  <h2><span id="Android_Market_y_su_competencia">Android Market y su competencia</span></h2>
+	  <p>Las tiendas por Internet están cada vez más en alza y más si se trata de tiendas de aplicaciones para los teléfonos móviles. No es de extrañar que las principales plataformas de móviles decidan crear portales donde poder descargar o comprar todas las aplicaciones posibles. Entre estas hablamos de dos de las más importantes, la App Store de Apple y la Android Market de Google pero también hay otras como Ovi Store de Nokia, App Place de Toshiba Market Place, App World de Blackberry, Microsoft Windows Phone Marketplace y Palm App Catalog. El desarrollo de aplicaciones para el iPhone no está siendo de fácil acceso como consecuencia de la política de admisión de aplicaciones de Apple que es muy restrictiva. En cambio Android Market no hace tantas excepciones con las aplicaciones, aceptando todas, propias o de desarrolladores, gracias a su herramienta Android SDK. Android Market al ser más reciente cuenta con unas 105.000 aplicaciones de las cuales el 62,2% son gratuitas. En cambio App Store contiene unas 220.000 aplicaciones de las cuales sólo el 23% son gratuitas. Por lo que se refiere al número de descargas App Store no tiene competencia , al menos por ahora, ya que es muy superior a sus competidores. En España la evolución de Android Market parece ser mejor comparada con el nivel mundial.</p>
+<p>&nbsp;</p>
+	</div>
+  <div data-role="footer">
+		<h4><img src="images/bymike.png" width="150" height="50"></h4>
+	</div>
+</div>
+<div data-role="page" id="page5"   data-theme="d">
+  <div data-role="header">
+    <h1><img src="images/foto.jpg" width="122" height="114"></h1>
+    <h1>Créditos</h1>
+  </div>
+  <div data-role="content">
+    <p>Esta es una aplicacion que creé para probar algunas herramientas de maquetado y estructura, ademas para testear el uso de SDK y el emulador de dispositivos android...</p>
+    <p>Mi nombre es Miguelángel Suárez Cassirám diseñador web, dearrollador freelance y entrando en el mundo del desarrollo movil con android, me da gusto compartir esta primera app contigo y espero que la info contenida sea de ayuda, espero actualizarla pronto.</p>
+    <p>Gracias...!</p>
+    <p>Más <a href="http://bit.ly/fjRFze">http://bit.ly/fjRFze</a></p>
+    <p><a href="http://www.twitter.com/_mike_sc" target="_blank"><img src="images/twitter.png" width="32" height="32"></a><a href="http://www.facebook.com/pages/Staticsshosting/116441075081484" target="_blank"><img src="images/facebook.png" width="32" height="32"></a><a href="http://www.linkedin.com/in/mikesc" target="_blank"><img src="images/linkedin.png" width="32" height="32"></a><a href="http://freelancevzla.wordpress.com/" target="_blank"><img src="images/wordpress.png" width="32" height="32"></a></p>
+  </div>
+  <div data-role="footer">
+    <h4><img src="images/bymike.png" width="150" height="50"></h4>
+  </div>
+</div>
+<div data-role="page" id="page6"  data-theme="d">
+  <div data-role="header">
+    <h1><img src="images/Droid Alt.png" width="48" height="48"></h1>
+    <h1>Descripción</h1>
+  </div>
+  <div data-role="content">
+    <p>Android&nbsp;es un sistema  operativo basado en&nbsp;GNU/Linux&nbsp;diseñado originalmente  para&nbsp;dispositivos móviles, tales como&nbsp;teléfonos inteligentes, pero  que posteriormente se expandió su desarrollo para soportar otros dispositivos  tales como&nbsp;tablets,&nbsp;reproductores MP3,netbooks,&nbsp;PCs,  televisores, lectores de e-books e incluso, se han llegado a ver en  el&nbsp;CES, microondas y lavadoras.</p>
+    <p>Fue desarrollado inicialmente  por&nbsp;Android Inc., una firma comprada  por&nbsp;Google&nbsp;en&nbsp;2005.&nbsp;Es el principal producto de  la&nbsp;Open Handset Alliance, un conglomerado de fabricantes y desarrolladores  de hardware, software y operadores de servicio.&nbsp;Las unidades vendidas de  teléfonos inteligentes con Android se ubican en el primer puesto en  los&nbsp;Estados Unidos, en el segundo y tercer trimestres  de&nbsp;2010,&nbsp;con una cuota de mercado de 43,6% en el tercer trimestre.</p>
+  </div>
+  <div data-role="footer">
+   <h4><img src="images/bymike.png" width="150" height="50"></h4>
+  </div>
+</div>
+<div data-role="page" id="page7"  data-theme="d">
+  <div data-role="header">
+    <h1><img src="images/Settings.png" width="48" height="48"></h1>
+    <h1>Arquitectura</h1>
+  </div>
+  <div data-role="content">
+    <p>Los componentes principales del sistema operativo de Android (cada sección se describe en detalle):</p>
+    <ul>
+      <li><strong>Aplicaciones</strong>: las aplicaciones base incluyen un cliente de correo electrónico, programa de SMS, calendario, mapas, navegador, contactos y otros. Todas las aplicaciones están escritas en lenguaje de programación Java.</li>
+    </ul>
+    <ul>
+      <li><strong>Marco de trabajo de aplicaciones</strong>: los desarrolladores tienen acceso completo a los mismos APIs del framework usados por las aplicaciones base. La arquitectura está diseñada para simplificar la reutilización de componentes; cualquier aplicación puede publicar sus capacidades y cualquier otra aplicación puede luego hacer uso de esas capacidades (sujeto a reglas de seguridad del framework). Este mismo mecanismo permite que los componentes sean reemplazados por el usuario.</li>
+    </ul>
+    <ul>
+      <li><strong>Bibliotecas</strong>: Android incluye un conjunto de bibliotecas de C/C++ usadas por varios componentes del sistema. Estas características se exponen a los desarrolladores a través del marco de trabajo de aplicaciones de Android; algunas son: System C library (implementación biblioteca C estándar), bibliotecas de medios, bibliotecas de gráficos, 3D y SQLite, entre otras.</li>
+    </ul>
+    <ul>
+      <li><strong>Runtime de Android</strong>: Android incluye un set de bibliotecas base que proporcionan la mayor parte de las funciones disponibles en las bibliotecas base del lenguaje Java. Cada aplicación Android corre su propio proceso, con su propia instancia de la máquina virtual Dalvik. Dalvik ha sido escrito de forma que un dispositivo puede correr múltiples máquinas virtuales de forma eficiente. Dalvik ejecuta archivos en el formato Dalvik Executable (.dex), el cual está optimizado para memoria mínima. La Máquina Virtual está basada en registros y corre clases compiladas por el compilador de Java que han sido transformadas al formato .dex por la herramienta incluida "dx".</li>
+    </ul>
+    <ul>
+      <li><strong>Núcleo Linux</strong>: Android depende de Linux para los servicios base del sistema como seguridad, gestión de memoria, gestión de procesos, pila de red y modelo de controladores. El núcleo también actúa como una capa de abstracción entre el hardware y el resto de la pila de software.</li>
+    </ul>
+  </div>
+  <div data-role="footer">
+  <h4><img src="images/bymike.png" width="150" height="50"></h4>  </div>
+</div>
+<div data-role="page" id="page8"  data-theme="d">
+  <div data-role="header">
+    <h1><img src="images/Screenshot.png" width="48" height="48"></h1>
+    <h1>Dispositivos</h1>
+  </div>
+  <div data-role="content">
+    <p>Android está presente en una gran multitud de dispositivos, tanto teléfonos móviles, como tablets, como portátiles y próximamente en Televisiones.En la actualidad existen más de 400.000 aplicaciones para Android y se estima que unos 550.000 teléfonos móviles se activan diariamente.</p>
+    <p>Aunque los comienzos de cualquier plataforma son siempre inciertos, no ha pasado mucho tiempo para que los fabricantes se hayan dado cuenta del auténtico potencial de esta plataforma. Actualmente es el sistema con el potencial de desarrollo más importante en el mundo de la telefonía móvil. El fabricante HTC entró de la mano de Google desarrollando el primer dispositivo en aparecer en el mercado y posteriormente muchos han sido los que han apostado por el nuevo entorno, logrando una clara competencia en el sector móvil, siendo este sistema operativo accesible desde terminales de menos de 100 euros hasta terminales que superen los 600, obviando, evidentemente sus diferencias técnicas.</p>
+  </div>
+  <div data-role="footer">
+    <h4><img src="images/bymike.png" width="150" height="50"></h4>
+  </div>
+</div>
+</body>
+</html>
